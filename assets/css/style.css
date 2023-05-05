@@ -23,11 +23,12 @@ body {
 .logo {
     height: 25rem;
 }
-/* landingpage section with the menu*/
+
+/* landingpage section with menu*/
 .intro {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
 }
 
 #startGame {
@@ -53,5 +54,38 @@ body {
 .btn:hover {
     border: 5px solid #0DB0E6;
 }
+
+/* form section for username*/
+.userForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#userName {
+    font-size: 1rem;
+    width: 30%;
+    height: 25px;
+    padding: 10px;
+    background: #F8E68E;
+    border: 5px solid #0DB0E6;
+
+}
+
+#submit {
+    padding: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #0DB0E6;
+    color: #F8E68E;
+}
+
+#submit:hover {
+    border: 5px solid #f50202;
+}
+
+
     
 

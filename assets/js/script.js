@@ -1,7 +1,7 @@
 //When the DOM is finished loading all sections except the intro-section shall be hidden
 
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
 
     // Code used for hiding elements https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/
     //Hide form section for username
@@ -25,7 +25,6 @@ let form = document.querySelector(".user");
 function showHideIntro() {
     intro.style.display = "none";
     form.style.display = "block";
-
 }
 
 
