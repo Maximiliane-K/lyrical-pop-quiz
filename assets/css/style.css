@@ -23,7 +23,32 @@ body {
 .logo {
     height: 25rem;
 }
+/* landingpage section with the menu*/
+.intro {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
 
+#startGame {
+    font-family: "Bungee", cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #0DB0E6;
+    background-color: #EEBC08;
+    padding: 2rem 2rem;
+    border-radius: 10%;
+}
+
+#info {
+    font-family: "Bungee", cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #0DB0E6;
+    background-color: #EEBC08;
+    padding: 2rem 1.5rem;
+    border-radius: 10%;
+}
 
     
 
