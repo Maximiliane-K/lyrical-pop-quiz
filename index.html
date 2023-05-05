@@ -17,20 +17,45 @@
         The name, Lyrical Pop Quiz, appears on top of the cassette">
     </h1>
 
-    <!-- landingpage with menu -->
+    <!-- landingpage section with menu -->
     <section id="intro" class="show">
         <button id="startGame">Start Game</button>
-        <button id="info">How to Play</button>
+        <button id="info">How to Play?</button>
     </section>
 
-    <!-- form for username-->
+    <!-- form section for username-->
     <section id="user">
         <form class="userForm" method="post" action="https://formdump.codeinstitute.net/">
-            <label id="enterUser" for="userName">Please enter a Username</label> 
+            <label id="enterUser" for="userName">Please enter a Username:</label> 
             <br>
             <input id="userName" type="text" name="username" placeholder="Please enter desired Username" required> 
             <br>
+            <input type="submit" value="Enter">
         </form>
+    </section>
+
+    <!-- main section with the game-->
+    <section id="gamePlay">
+        <div>
+            <p id="userName">
+                <!-- the username will be displayed using js-->
+            </p>
+            <p id="timer">0:45</p>
+        </div>
+        <hr>
+        <div id="questions">
+            <p>
+                <!-- the lyrics with the missing snippet will be displayed here using js-->
+            </p>
+        </div>
+        <hr>
+        <div id="answerList">
+            <!-- list of three answes will be displayed using js-->
+        </div>
+        <hr>
+        <div>
+            <button id="next">Next</button>
+        </div>
     </section>
 
 
