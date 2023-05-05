@@ -10,7 +10,20 @@
 
 /* body and heading styling*/
 body {
-    font-family: Bungee, cursive;
+    font-family: "Bungee", cursive;
     font-weight: 500;
     color: #0DB0E6;
+    background: #F8E68E;
 }
+
+.heading {
+    text-align: center;
+}
+
+.logo {
+    height: 25rem;
+}
+
+
+    
+
