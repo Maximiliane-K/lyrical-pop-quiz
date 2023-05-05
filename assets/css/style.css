@@ -50,5 +50,8 @@ body {
     border-radius: 10%;
 }
 
+.btn:hover {
+    border: 5px solid #0DB0E6;
+}
     
 
