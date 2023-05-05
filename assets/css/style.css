@@ -1,0 +1,16 @@
+/* google fonts import*/
+  @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind+Madurai&display=swap');
+
+/* remove default values*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* body and heading styling*/
+body {
+    font-family: Bungee, cursive;
+    font-weight: 500;
+    color: #0DB0E6;
+}
