@@ -41,7 +41,7 @@ function enterBtn() {
 
     if (userName === null || userName === "") {
         let errorDiv = document.getElementById("errors");
-        errorDiv.innerHTML = "Please choose a username to play the game.";
+        errorDiv.innerHTML = "Please choose a username to play the game!";
         errorDiv.style.display="block";
     } else {
         console.log("Username entered successfully!");
