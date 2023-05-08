@@ -52,6 +52,9 @@ function enterBtn() {
     }
 }
 
+/**
+ * function for displaying the username on tha main game section 
+ */
 let usernameP = document.getElementById("username-output");
 let userName = document.getElementById("username")
 
@@ -62,6 +65,36 @@ function displayUsername() {
 
 submit.addEventListener("click", displayUsername);
 
+//Code used for the Timer https://codepen.io/ideaguy1974/pen/pZBBLK 
+//and http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plus-clearinterval-methods/
+let timeLeft = 10;
+let timer = document.getElementById("timer");
+
+/**
+ * Function for the timer after starting game
+ */
+function timerGo() {
+    
+setInterval(function(){
+  if (timeLeft === 0) {
+    
+    // clearTimeout(timerId);
+    console.log("countdown");
+
+    let result = document.querySelector(".result");
+    
+    result.style.display = "block";
+    intro.style.display = "none";
+    form.style.display = "none";
+    game.style.display = "none";
+    console.log("Times up!");
+
+  } else {
+    timer.innerHTML = timeLeft + ' seconds remaining';
+    timeLeft-= 1;
+  }
+}, 1000);
+}
 
 
 

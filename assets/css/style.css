@@ -98,5 +98,8 @@ body {
     display: none;
 }
 
-    
+/* Main game section*/
+#username-output {
+    color:#0DB0E6;
+}
 
