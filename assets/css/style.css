@@ -22,6 +22,7 @@ body {
 
 .logo {
     height: 25rem;
+    text-align: center;
 }
 
 /* landingpage section with menu*/
@@ -99,7 +100,40 @@ body {
 }
 
 /* Main game section*/
+.game-play {
+    text-align: center;
+    padding: 1 rem;
+}
+
 #username-output {
+    font-size: 2rem;
+    padding: 1rem;
     color:#0DB0E6;
 }
 
+#start {
+    background: #EEBC08;
+    color: #0DB0E6;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 25%
+}
+
+#start:hover {
+    background-color: #29C901;
+    color: #f50202;
+}
+
+#next {
+    background: #EEBC08;
+    color: #0DB0E6;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 25%
+}
+
+#next:hover {
+    background-color: #29C901;
+    color: #f50202;
+}

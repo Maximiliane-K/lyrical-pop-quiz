@@ -2,14 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Code used for hiding elements https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/
-    //Hide form section for username
+    // Code used for hiding sections https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/
+    
     document.querySelector(".user").style.display = "none";
-
-    //Hide main game section 
     document.querySelector(".game-play").style.display = "none";
-
-    //Hide result page
     document.querySelector(".result").style.display = "none"; 
 
 }); 
@@ -59,7 +55,7 @@ let usernameP = document.getElementById("username-output");
 let userName = document.getElementById("username")
 
 function displayUsername() {
-    usernameP.innerHTML = userName.value;
+    usernameP.innerHTML = "Lets Get Lyrical " + userName.value + "!";
     console.log("Username:", userName.value)
 }
 
