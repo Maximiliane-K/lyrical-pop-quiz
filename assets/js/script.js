@@ -37,8 +37,9 @@ let game = document.querySelector(".game-play");
 function enterBtn() {
     console.log("function fired");
 
-    let userName = document.getElementById("user-name").value;
+    let userName = document.getElementById("username").value;
 
+    //Code for the <div> is from the CodeInstitutes "Validating Form Data" lesson
     if (userName === null || userName === "") {
         let errorDiv = document.getElementById("errors");
         errorDiv.innerHTML = "Please choose a username to play the game!";
@@ -50,6 +51,17 @@ function enterBtn() {
         game.style.display = "block";
     }
 }
+
+let usernameP = document.getElementById("username-output");
+let userName = document.getElementById("username")
+
+function displayUsername() {
+    usernameP.innerHTML = userName.value;
+    console.log("Username:", userName.value)
+}
+
+submit.addEventListener("click", displayUsername);
+
 
 
 

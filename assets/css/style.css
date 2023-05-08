@@ -64,9 +64,8 @@ body {
     font-size: 2rem;
 }
 
-#user-name {
+#username {
     font-size: 1rem;
-    
     width: 30%;
     height: 25px;
     padding: 10px;
