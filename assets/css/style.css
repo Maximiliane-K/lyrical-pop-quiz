@@ -1,14 +1,14 @@
-/* google fonts import*/
+/* google fonts import */
   @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind+Madurai&display=swap');
 
-/* remove default values*/
+/* remove default values */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* body and heading styling*/
+/* body and heading styling */
 body {
     font-family: "Bungee", cursive;
     font-weight: 500;
@@ -25,7 +25,7 @@ body {
     text-align: center;
 }
 
-/* landingpage section with menu*/
+/* landingpage section with menu */
 .intro {
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@ body {
     border: 5px solid #0DB0E6;
 }
 
-/* form section for username*/
+/* form section for username */
 .user-form {
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@ body {
     display: none;
 }
 
-/* Main game section*/
+/* Main game section */
 .game-play {
     text-align: center;
     padding: 1 rem;
@@ -136,4 +136,42 @@ body {
 #next:hover {
     background-color: #29C901;
     color: #f50202;
+}
+
+/* Result section with score */
+.result {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.scores {
+    padding: 1rem;
+}
+
+#right{
+    color: #29C901;
+}
+
+#score-right {
+    color: #29C901;
+}
+
+#wrong {
+    color: #f50202;
+}
+#score-wrong {
+    color: #f50202;
+}
+
+#restart {
+    background: #EEBC08;
+    color: #0DB0E6;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 25%
+}
+
+#restart:hover {
+    border: 8px solid #29C901;
+    color: #29C901;
 }

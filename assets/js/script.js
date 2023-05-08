@@ -63,7 +63,7 @@ submit.addEventListener("click", displayUsername);
 
 //Code used for the Timer https://codepen.io/ideaguy1974/pen/pZBBLK 
 //and http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plus-clearinterval-methods/
-let timeLeft = 10;
+let timeLeft = 5;
 let timer = document.getElementById("timer");
 
 /**
