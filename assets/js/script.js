@@ -70,6 +70,8 @@ let timer = document.getElementById("timer");
  * Function for the timer after starting game
  */
 function timerGo() {
+
+    document.getElementById("start").style.display = "none";
     
 setInterval(function(){
   if (timeLeft === 0) {
@@ -78,7 +80,7 @@ setInterval(function(){
     console.log("countdown");
 
     let result = document.querySelector(".result");
-    
+
     result.style.display = "block";
     intro.style.display = "none";
     form.style.display = "none";
@@ -91,6 +93,7 @@ setInterval(function(){
   }
 }, 1000);
 }
+
 
 
 
