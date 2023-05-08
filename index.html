@@ -19,26 +19,27 @@
 
     <!-- landingpage section with menu -->
     <section class="intro">
-        <button class="btn" id="startGame" onclick = "showHideIntro()">Start Game</button>
+        <button class="btn" id="start-game" onclick="showHideIntro()">Start Game</button>
         <br>
         <button class="btn" id="info">How to Play?</button>
     </section>
 
     <!-- form section for username-->
     <section class="user">
-        <form class="userForm" method="post" action="https://formdump.codeinstitute.net/">
-            <label id="enterUser" for="userName">Please enter a Username:</label> 
+        <form class="user-form" id="user-form" method="post">
+            <label for="userame">Please enter a Username:</label> 
             <br>
-            <input id="userName" type="text" name="username" placeholder="Please enter desired username here" required> 
+            <input id="user-name" type="text" name="username" placeholder="Please enter desired username here" required> 
             <br>
-            <input id="submit" type="submit" value="Enter">
+       <div id="errors"></div>
+            <button type="button" id="submit" onclick="enterBtn()">Enter</button> 
         </form>
     </section>
 
     <!-- main section with the game-->
-    <section class="gamePlay">
+    <section class="game-play">
         <div>
-            <p id="userName">
+            <p id="user-name">
                 <!-- the username will be displayed using js-->
             </p>
             <p id="timer">0:45</p>
@@ -50,7 +51,7 @@
             </p>
         </div>
         <hr>
-        <div id="answerList">
+        <div id="answer-list">
             <!-- list of three answes will be displayed using js-->
         </div>
         <hr>
@@ -62,7 +63,7 @@
     <!-- result section that shows final score-->
     <section class="result">
             <p>TIMES UP!</p>
-            <p id="resultMessage">
+            <p id="result-message">
                 <!-- depending on how high the score was a message will apear using js-->
             </p>
         <br>

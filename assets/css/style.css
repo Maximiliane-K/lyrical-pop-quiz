@@ -31,7 +31,7 @@ body {
     align-items: center;
 }
 
-#startGame {
+#start-game {
     font-family: "Bungee", cursive;
     font-weight: 500;
     font-size: 1.5rem;
@@ -56,7 +56,7 @@ body {
 }
 
 /* form section for username*/
-.userForm {
+.user-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +64,7 @@ body {
     font-size: 2rem;
 }
 
-#userName {
+#user-name {
     font-size: 1rem;
     width: 30%;
     height: 25px;
@@ -86,6 +86,14 @@ body {
     border: 5px solid #f50202;
 }
 
+#errors {
+    background-color: red;
+    padding: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 3px;
+    display: none;
+}
 
     
 
