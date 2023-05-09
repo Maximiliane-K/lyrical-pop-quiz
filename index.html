@@ -31,14 +31,14 @@
 
         <!-- form section for username -->
         <section class="user">
-            <form class="user-form" method="post">
+            <div class="user-input">
                 <label for="userame">Please enter a Username:</label> 
                 <br>
                 <input id="username" type="text" name="username" required> 
                 <br>
-        <div id="errors"></div>
-                <button type="button" id="submit" onclick="enterBtn()">Enter</button> 
-            </form>
+                <div id="errors"></div>
+                <button type="button" id="submit" onclick="enterBtn(); displayUsername()">Enter</button> 
+            </div>
         </section>
 
         <!-- main section with the game -->
@@ -48,21 +48,21 @@
                     <!-- the username will be displayed using js -->
                 </p>
             </div>
-            <button id="start" onclick="timerGo()">GO!</button>
+                <button id="start" onclick="timerGo()">GO!</button>
             <div id="timer">
                 <!-- the timer will be displayed using js -->
             </div>
-            <hr>
+                <hr>
             <div id="questions">
                 <p>
                     <!-- the lyrics with the missing snippet will be displayed here using js -->
                 </p>
             </div>
-            <hr>
+                <hr>
             <div id="answer-list">
                 <!-- list of three answes will be displayed using js -->
             </div>
-            <hr>
+                <hr>
             <div>
                 <button id="next">Next</button>
             </div>
@@ -70,13 +70,13 @@
 
         <!-- result section that shows final score -->
         <section class="result">
-                <p>TIMES UP!</p>
-                <p id="result-message">
-                    <!-- depending on how high the score was a message will apear using js -->
-                </p>
+            <p>TIMES UP!</p>
+            <p id="result-message">
+                <!-- depending on how high the score was a message will apear using js -->
+            </p>
             <br>
-                <p class="scores" id="right">Right Lyrics:<span id="score-right">0</span></p>
-                <p class="scores" id="wrong">Wrong Lyrics:<span id="score-wrong">0</span></p>
+            <p class="scores" id="right">Right Lyrics:<span id="score-right">0</span></p>
+            <p class="scores" id="wrong">Wrong Lyrics:<span id="score-wrong">0</span></p>
             <br>
             <button id="restart">Restart</button>
         </section>
@@ -84,5 +84,6 @@
 
     <!-- Javascript -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 </html>

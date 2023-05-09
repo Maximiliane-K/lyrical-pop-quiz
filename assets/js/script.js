@@ -1,3 +1,11 @@
+//variable declaration
+const intro = document.querySelector(".intro");
+const form = document.querySelector(".user");
+
+//username variables 
+const usernameP = document.getElementById("username-output");
+const userName = document.getElementById("username")
+
 //When the DOM is finished loading all sections except the intro-section shall be hidden
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -10,14 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 }); 
 
-
 /**
  * Hides the two buttons on the intro page when "Start Game" is clicked 
  * and shows form for user to enter username
  */
-let intro = document.querySelector(".intro");
-let form = document.querySelector(".user");
-
 function showHideIntro() {
 
     intro.style.display = "none";
@@ -28,9 +32,8 @@ function showHideIntro() {
  * Shows error when the inpout field for username is left empty 
  * and when username is succesfully entered hides form sectiona and shows main game section 
  */
-let game = document.querySelector(".game-play");
-
 function enterBtn() {
+    const game = document.querySelector(".game-play");
     console.log("function fired");
 
     let userName = document.getElementById("username").value;
@@ -49,50 +52,47 @@ function enterBtn() {
 }
 
 /**
- * function for displaying the username on tha main game section 
+ * function for displaying the username on tha main game section after clicking the enter-button
  */
-let usernameP = document.getElementById("username-output");
-let userName = document.getElementById("username")
-
 function displayUsername() {
     usernameP.innerHTML = "Lets Get Lyrical " + userName.value + "!";
     console.log("Username:", userName.value)
 }
 
-submit.addEventListener("click", displayUsername);
-
-//Code used for the Timer https://codepen.io/ideaguy1974/pen/pZBBLK 
-//and http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plus-clearinterval-methods/
-let timeLeft = 5;
-let timer = document.getElementById("timer");
-
 /**
  * Function for the timer after starting game
+ * 
+ * Code used for the Timer:
+ * https://codepen.io/ideaguy1974/pen/pZBBLK
+ * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plus-clearinterval-methods/
  */
 function timerGo() {
+    let timeLeft = 5;
+    let timer = document.getElementById("timer");
 
     document.getElementById("start").style.display = "none";
     
-setInterval(function(){
-  if (timeLeft === 0) {
+    setInterval(function(){
+    if (timeLeft === 0) {
     
-    // clearTimeout(timerId);
-    console.log("countdown");
+        // clearTimeout(timerId);
+        console.log("countdown");
 
-    let result = document.querySelector(".result");
+        let result = document.querySelector(".result");
 
-    result.style.display = "block";
-    intro.style.display = "none";
-    form.style.display = "none";
-    game.style.display = "none";
-    console.log("Times up!");
+        result.style.display = "block";
+        intro.style.display = "none";
+        form.style.display = "none";
+        game.style.display = "none";
+        console.log("Times up!");
 
-  } else {
-    timer.innerHTML = timeLeft + ' seconds remaining';
-    timeLeft-= 1;
-  }
-}, 1000);
+    } else {
+        timer.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft-= 1;
+    }
+    }, 1000);
 }
+
 
 
 

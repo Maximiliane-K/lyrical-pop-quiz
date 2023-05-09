@@ -59,7 +59,7 @@ body {
 }
 
 /* form section for username */
-.user-form {
+.user-input {
     display: flex;
     flex-direction: column;
     align-items: center;
