@@ -21,7 +21,8 @@ body {
 }
 
 .logo {
-    height: 25rem;
+    height: 15rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -173,6 +174,49 @@ body {
 }
 
 #restart:hover {
+    border: 8px solid #29C901;
+    color: #29C901;
+}
+
+/* Rules info page*/
+.rules {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Hind Madurai", sans-serif;
+    padding: 1rem;
+}
+
+.rules h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.rules p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.rules ul {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+#play-now {
+    background: #EEBC08;
+    color: #0DB0E6;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    border-radius: 25%
+}
+
+#play-now:hover {
     border: 8px solid #29C901;
     color: #29C901;
 }
