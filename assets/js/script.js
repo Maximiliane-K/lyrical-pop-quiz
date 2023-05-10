@@ -133,9 +133,20 @@ function displayGame() {
  
          optionElements.forEach(function(element, index){
              element.textContent = question.options[index];
+
+             element.addEventListener("click", function(){
+                if (question.answer === index) {
+                    console.log("correct answer");
+                    
+                } else {
+                    console.log("wrong answer");
+                }
+             })
          });
      };
  } 
+
+
 
 
 
