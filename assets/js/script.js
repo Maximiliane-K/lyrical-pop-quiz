@@ -1,10 +1,17 @@
 //variable declaration
 const intro = document.querySelector(".intro");
 const form = document.querySelector(".user");
+const game = document.querySelector(".game-play")
 
 //username variables 
 const usernameP = document.getElementById("username-output");
 const userName = document.getElementById("username")
+
+//main game variables
+const questionElement = document.getElementById("lyrics"); 
+const optionElements = document.querySelectorAll(".options");
+const allAnswers = document.getElementById("answer-buttons");
+const nextBtn = document.getElementById("next");
 
 //When the DOM is finished loading all sections except the intro-section shall be hidden
 
@@ -60,14 +67,25 @@ function displayUsername() {
 }
 
 /**
+ * Function to hide the lyrics and answer options befor clickling "Go!"
+ */
+function hideGame() {
+    console.log("Game hidden")
+
+    questionElement.style.display = "none";
+    allAnswers.style.display = "none";
+    nextBtn.style.display = "none";
+}
+
+/**
  * Function for the timer after starting game
  * 
  * Code used for the Timer:
  * https://codepen.io/ideaguy1974/pen/pZBBLK
- * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plus-clearinterval-methods/
+ * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plu/s-clearinterval-methods/
  */
 function timerGo() {
-    let timeLeft = 5;
+    let timeLeft = 300;
     let timer = document.getElementById("timer");
 
     document.getElementById("start").style.display = "none";
@@ -102,11 +120,9 @@ function timerGo() {
      console.log("show questions")
  
      for (let question of questions) {
-         const questionElement = document.getElementById("lyrics");
          questionElement.textContent = question.text;
  
-         const optionElement = document.querySelectorAll(".options");
-         optionElement.forEach(function(element, index){
+         optionElements.forEach(function(element, index){
              element.textContent = question.options[index];
          });
      };

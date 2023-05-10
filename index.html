@@ -37,7 +37,7 @@
                 <input id="username" type="text" name="username" required> 
                 <br>
                 <div id="errors"></div>
-                <button type="button" id="submit" onclick="enterBtn(); displayUsername()">Enter</button> 
+                <button type="button" id="submit" onclick="enterBtn(); displayUsername(); hideGame()">Enter</button> 
             </div>
         </section>
 
@@ -49,16 +49,18 @@
                 </p>
             </div>
                 <button id="start" onclick="timerGo(); showQuestion()">GO!</button>
-            <div id="timer">
+           <div id="timer">
                 <!-- the timer will be displayed using js -->
-            </div>
+           </div>
                 <hr>
                 <div id="lyrics"></div>
-            <ul>
-                <li class="options"></li>
-                <li class="options"></li>
-                <li class="options"></li>
-            </ul>
+                <div id="answer-buttons">
+                    <button class="options"></button>
+                    <br>
+                    <button class="options"></button>
+                    <br>
+                    <button class="options"></button>
+                </div>
             <div>
                 <button id="next">Next</button>
             </div>
