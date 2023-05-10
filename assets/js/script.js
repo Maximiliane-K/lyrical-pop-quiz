@@ -11,7 +11,7 @@ const userName = document.getElementById("username")
 const questionElement = document.getElementById("lyrics"); 
 const optionElements = document.querySelectorAll(".options");
 const allAnswers = document.getElementById("answer-buttons");
-const nextBtn = document.getElementById("next");
+const nextBtn = document.querySelector(".next");
 
 //When the DOM is finished loading all sections except the intro-section shall be hidden
 
@@ -109,6 +109,15 @@ function timerGo() {
         timeLeft-= 1;
     }
     }, 1000);
+}
+ /**
+  * Function for showing main game section after clicking "Go!" button
+  */
+function displayGame() {
+    console.log("Show game")
+    questionElement.style.display = "block";
+    allAnswers.style.display = "flex";
+    nextBtn.style.display = "block";
 }
 
 /**
