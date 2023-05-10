@@ -48,21 +48,17 @@
                     <!-- the username will be displayed using js -->
                 </p>
             </div>
-                <button id="start" onclick="timerGo()">GO!</button>
+                <button id="start" onclick="timerGo(); showQuestion()">GO!</button>
             <div id="timer">
                 <!-- the timer will be displayed using js -->
             </div>
                 <hr>
-            <div id="questions">
-                <p>
-                    <!-- the lyrics with the missing snippet will be displayed here using js -->
-                </p>
-            </div>
-                <hr>
-            <div id="answer-list">
-                <!-- list of three answes will be displayed using js -->
-            </div>
-                <hr>
+                <div id="lyrics"></div>
+            <ul>
+                <li class="options"></li>
+                <li class="options"></li>
+                <li class="options"></li>
+            </ul>
             <div>
                 <button id="next">Next</button>
             </div>

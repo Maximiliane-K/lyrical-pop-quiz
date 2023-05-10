@@ -93,6 +93,25 @@ function timerGo() {
     }, 1000);
 }
 
+/**
+ * Function for showing lyrics and the missing lyrical-snippet
+ */
+ let currentQuestion = 0;
+ 
+ function showQuestion() {
+     console.log("show questions")
+ 
+     for (let question of questions) {
+         const questionElement = document.getElementById("lyrics");
+         questionElement.textContent = question.text;
+ 
+         const optionElement = document.querySelectorAll(".options");
+         optionElement.forEach(function(element, index){
+             element.textContent = question.options[index];
+         });
+     };
+ } 
+
 
 
 
