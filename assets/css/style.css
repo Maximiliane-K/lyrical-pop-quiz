@@ -110,8 +110,8 @@ body {
 }
 
 #username-output {
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 5px;
     color:#0DB0E6;
 }
 
@@ -129,13 +129,7 @@ body {
     color: #f50202;
 }
 
-/*.next {
-    order: 1;
-    align-items: center;
-}*/
-
 #next {
-    order: 1;
     background: #EEBC08;
     color: #0DB0E6;
     font-size: 1.5rem;
@@ -145,21 +139,20 @@ body {
 }
 
 #next:hover {
-    background-color: #29C901;
-    color: #f50202;
+    background-color: #0DB0E6;
+    color: #000000;
 }
 
 /* Timer */
 #timer {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 15px;
+    padding: 10px;
     background: EEBC08;
 }
 
 /* Lyrics and missing snippet*/
 #lyrics {
     font-size: 2rem;
-    text-transform: lowercase;
     padding: 2rem;
 }
 
@@ -171,9 +164,13 @@ body {
 .options {
     color: #F8E68E;
     background-color: #0DB0E6;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 5px;
-    margin: 1rem;
+    margin: 5px;
+}
+
+.options:hover {
+    border: 5px solid #000000;
 }
 
 /* Result section with score */

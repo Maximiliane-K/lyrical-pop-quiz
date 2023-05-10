@@ -129,7 +129,7 @@ function displayGame() {
      console.log("show questions")
  
      for (let question of questions) {
-         questionElement.textContent = question.text;
+         questionElement.textContent = "Lyrics: " +question.text;
  
          optionElements.forEach(function(element, index){
              element.textContent = question.options[index];
