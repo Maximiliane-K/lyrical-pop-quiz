@@ -85,7 +85,7 @@ function hideGame() {
  * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plu/s-clearinterval-methods/
  */
 function timerGo() {
-    let timeLeft = 300;
+    let timeLeft = 5;
     let timer = document.getElementById("timer");
 
     document.getElementById("start").style.display = "none";
@@ -121,30 +121,52 @@ function displayGame() {
 }
 
 /**
- * Function for showing lyrics and the missing lyrical-snippet
+ * Main game loop called when clicked on the "Go!" button
  */
  let currentQuestion = 0;
  
  function showQuestion() {
      console.log("show questions")
- 
+    
+     // function for itterating through questions
      for (let question of questions) {
          questionElement.textContent = "Lyrics: " +question.text;
- 
+        
+         // Displays the answer options
          optionElements.forEach(function(element, index){
              element.textContent = question.options[index];
 
+             
              element.addEventListener("click", function(){
+                //Condition to check answer
                 if (question.answer === index) {
                     console.log("correct answer");
-                    
+                    incrementRight();
+
                 } else {
                     console.log("wrong answer");
+                    incrementWrong();
                 }
              })
          });
      };
  } 
+
+ function incrementRight() {
+   console.log("Add 1 to Correct lyrics")
+    
+   let oldSCore = parseInt(document.getElementById("score").innerText);
+   document.getElementById("score").innerText = ++oldSCore
+ }
+
+ function incrementWrong() {
+    console.log("Add 1 to Wrong lyrics")
+     
+    let oldSCore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldSCore
+  }
+
+
 
 
 
