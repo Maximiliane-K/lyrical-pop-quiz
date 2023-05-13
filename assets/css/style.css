@@ -183,6 +183,10 @@ body {
     background-color: #f50202;
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 /* Result section with score */
 .result {
     text-align: center;

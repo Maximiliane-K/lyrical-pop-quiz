@@ -147,9 +147,23 @@ function showQuestion() {
                 console.log("wrong");
                 button.classList.add("wrong-answer");
             }
+
+            selectedAnswer();
         });
     });
 }
+
+/**
+ * Function to disable button after selecting an answer
+ */
+function selectedAnswer() {
+    for (i = 0; i < optionElements.length; i++) {
+        optionElements[i].classList.add("disabled");
+    }
+}
+
+
+
 
 
 
