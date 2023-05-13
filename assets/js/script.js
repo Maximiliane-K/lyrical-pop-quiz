@@ -122,8 +122,14 @@ function displayGame() {
     showQuestion();
 }
 
+/**
+ * Variable to be used as index to access questions array 
+ */
 let currentQuestion = 0;
 
+ /**
+  * Function for displaying questions and answer options
+  */
 function showQuestion() {
     console.log("show question")
 
@@ -136,9 +142,15 @@ function showQuestion() {
         button.addEventListener("click", function(event) {
             if (event.target.innerHTML === questions[currentQuestion].answer) {
                 console.log("correct");
+                button.classList.add("correct-answer");
             } else {
                 console.log("wrong");
+                button.classList.add("wrong-answer");
             }
         });
     });
 }
+
+
+
+

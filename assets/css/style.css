@@ -171,10 +171,16 @@ body {
 
 .options:hover {
     border: 5px solid #000000;
+    color: #000000;
 }
 
-.correctAnswer {
-    background-color: green; 
+.correct-answer {
+    background-color: #29C901;
+    color: #000000;
+}
+
+.wrong-answer {
+    background-color: #f50202;
 }
 
 /* Result section with score */
