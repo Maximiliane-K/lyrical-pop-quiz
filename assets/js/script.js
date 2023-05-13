@@ -85,7 +85,7 @@ function hideGame() {
  * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plu/s-clearinterval-methods/
  */
 function timerGo() {
-    let timeLeft = 5;
+    let timeLeft = 60;
     let timer = document.getElementById("timer");
 
     document.getElementById("start").style.display = "none";
@@ -116,64 +116,29 @@ function timerGo() {
 function displayGame() {
     console.log("Show game")
     questionElement.style.display = "block";
-    allAnswers.style.display = "flex";
+    allAnswers.style.display = "block";
     nextBtn.style.display = "block";
+
+    showQuestion();
 }
 
-/**
- * Main game loop called when clicked on the "Go!" button
- */
- let currentQuestion = 0;
- 
- function showQuestion() {
-     console.log("show questions")
-    
-     // function for itterating through questions
-     for (let question of questions) {
-         questionElement.textContent = "Lyrics: " +question.text;
-        
-         // Displays the answer options
-         optionElements.forEach(function(element, index){
-             element.textContent = question.options[index];
+let currentQuestion = 0;
 
-             
-             element.addEventListener("click", function(){
-                //Condition to check answer
-                if (question.answer === index) {
-                    console.log("correct answer");
-                    incrementRight();
+function showQuestion() {
+    console.log("show question")
 
-                } else {
-                    console.log("wrong answer");
-                    incrementWrong();
-                }
-             })
-         });
-     };
- } 
+    const question = questions[currentQuestion];
+    questionElement.innerHTML = "Lyrics: " + question.text;
 
- function incrementRight() {
-   console.log("Add 1 to Correct lyrics")
-    
-   let oldSCore = parseInt(document.getElementById("score").innerText);
-   document.getElementById("score").innerText = ++oldSCore
- }
+    optionElements.forEach(function(button, index) {
+        button.textContent = question.options[index];
 
- function incrementWrong() {
-    console.log("Add 1 to Wrong lyrics")
-     
-    let oldSCore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldSCore
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+        button.addEventListener("click", function(event) {
+            if (event.target.innerHTML === questions[currentQuestion].answer) {
+                console.log("correct");
+            } else {
+                console.log("wrong");
+            }
+        });
+    });
+}

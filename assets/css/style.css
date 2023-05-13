@@ -1,5 +1,5 @@
 /* google fonts import */
-  @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind+Madurai&display=swap');
 
 /* remove default values */
 * {
@@ -160,17 +160,21 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .options {
     color: #F8E68E;
     background-color: #0DB0E6;
     font-size: 2rem;
     padding: 5px;
     margin: 5px;
+    width: 100%;
 }
 
 .options:hover {
     border: 5px solid #000000;
+}
+
+.correctAnswer {
+    background-color: green; 
 }
 
 /* Result section with score */
@@ -253,4 +257,3 @@ body {
     border: 8px solid #29C901;
     color: #29C901;
 }
-

@@ -1,9 +1,20 @@
+
 const questions = [
     {
-        text: "I'm looking at the man in the...",
-        options: ["mirror", "window", "car"],
-        answer: 0,
-    }
+        text: "first test text",
+        options: ["optionA", "optionsB","optionC"],
+        answer: "optionA"
+    },
+    {
+        text: "second test text",
+        options: ["optionA", "optionsB","optionC"],
+        answer: "optionB"
+    },
+    {
+        text: "third test text",
+        options: ["optionA", "optionsB","optionC"],
+        answer: "optionC"
+    },
 ]
 
 
