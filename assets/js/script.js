@@ -85,7 +85,7 @@ function hideGame() {
  * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plu/s-clearinterval-methods/
  */
 function timerGo() {
-    let timeLeft = 60;
+    let timeLeft = 10;
     let timer = document.getElementById("timer");
 
     document.getElementById("start").style.display = "none";
@@ -117,8 +117,7 @@ function displayGame() {
     console.log("Show game")
     questionElement.style.display = "block";
     allAnswers.style.display = "block";
-    nextBtn.style.display = "block";
-
+    
     showQuestion();
 }
 
@@ -142,25 +141,49 @@ function showQuestion() {
         button.addEventListener("click", function(event) {
             if (event.target.innerHTML === questions[currentQuestion].answer) {
                 console.log("correct");
+                incrementRight();
                 button.classList.add("correct-answer");
+
             } else {
                 console.log("wrong");
+                incrementWrong();
                 button.classList.add("wrong-answer");
             }
-
-            selectedAnswer();
+            
+            for (i = 0; i < optionElements.length; i++) {
+                optionElements[i].classList.add("disabled");
+            }
+            
+            nextBtn.style.display="block";
         });
     });
 }
 
 /**
- * Function to disable button after selecting an answer
+ * Functions to increment right lyrics score 
  */
-function selectedAnswer() {
-    for (i = 0; i < optionElements.length; i++) {
-        optionElements[i].classList.add("disabled");
-    }
+function incrementRight() {
+    let currentScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++currentScore;
+    console.log(`score ${currentScore}`);
 }
+
+/**
+ * Functions to increment wrong lyrics score 
+ */
+function incrementWrong() {
+    let currentScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++currentScore;
+    console.log(`incorrect score ${currentScore}`);
+}
+
+
+
+
+
+
+
+
 
 
 
