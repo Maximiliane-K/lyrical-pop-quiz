@@ -85,7 +85,7 @@ function hideGame() {
  * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plu/s-clearinterval-methods/
  */
 function timerGo() {
-    let timeLeft = 10;
+    let timeLeft = 30;
     let timer = document.getElementById("timer");
 
     document.getElementById("start").style.display = "none";
@@ -95,7 +95,7 @@ function timerGo() {
     
         // clearTimeout(timerId);
         console.log("countdown");
-
+        
         let result = document.querySelector(".result");
 
         result.style.display = "block";
@@ -108,8 +108,9 @@ function timerGo() {
         timer.innerHTML = timeLeft + ' seconds remaining';
         timeLeft-= 1;
     }
-    }, 1000);
+    }, 1000); 
 }
+
  /**
   * Function for showing main game section after clicking "Go!" button
   */
@@ -133,7 +134,7 @@ function showQuestion() {
     console.log("show question")
 
     const question = questions[currentQuestion];
-    questionElement.innerHTML = "Lyrics: " + question.text;
+    questionElement.innerHTML = "Lyrics: " + question.text; 
 
     optionElements.forEach(function(button, index) {
         button.textContent = question.options[index];
@@ -149,33 +150,58 @@ function showQuestion() {
                 incrementWrong();
                 button.classList.add("wrong-answer");
             }
-            
-            for (i = 0; i < optionElements.length; i++) {
-                optionElements[i].classList.add("disabled");
-            }
-            
+
             nextBtn.style.display="block";
+
+            for (i = 0; i < optionElements.length; i++) {
+            optionElements[i].classList.add("disabled");
+            }
+
+            });
         });
-    });
-}
+    }
 
 /**
- * Functions to increment right lyrics score 
+ * Function to increment index of currentQuestion to show next question
  */
-function incrementRight() {
+    nextBtn.addEventListener("click", () => {
+        currentQuestion++;
+        setNextQuestion();
+    });
+    
+/**
+ * Function to increment score of correct answers 
+ */
+function incrementScore(){
     let currentScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++currentScore;
     console.log(`score ${currentScore}`);
 }
 
 /**
- * Functions to increment wrong lyrics score 
+ * Function to increment score of wrong answers
  */
-function incrementWrong() {
+function incrementWrong(){
     let currentScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++currentScore;
     console.log(`incorrect score ${currentScore}`);
 }
+
+/**#
+ * Function to display next question
+ */
+function setNextQuestion() {
+    console.log("next question");
+    nextBtn.style.display="none";
+    showQuestion();
+}
+
+function resetState() {
+}
+
+
+
+
 
 
 
