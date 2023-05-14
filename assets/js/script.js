@@ -172,7 +172,7 @@ function showQuestion() {
 /**
  * Function to increment score of correct answers 
  */
-function incrementScore(){
+function incrementRight(){
     let currentScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++currentScore;
     console.log(`score ${currentScore}`);
