@@ -158,6 +158,9 @@ function showQuestion() {
             }
 
             });
+            button.classList.remove("correct-answer");
+            button.classList.remove("wrong-answer");
+            button.classList.remove("disabled");
         });
     }
 
@@ -195,11 +198,6 @@ function setNextQuestion() {
     nextBtn.style.display="none";
     showQuestion();
 }
-
-function resetState() {
-}
-
-
 
 
 

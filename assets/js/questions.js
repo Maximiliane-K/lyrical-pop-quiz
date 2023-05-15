@@ -7,8 +7,8 @@ const questions = [
     },
     {
         text: "Because maybe, you're gonna be the one that saves me, and after all you're...",
-        options: ["my one and all", "my Wonderwall", "my wonderball"],
-        answer: "my wonderball"
+        options: ["my one and all", "my wonderwall", "my wonderball"],
+        answer: "my wonderwall"
     },
     {
         text: "Let's rock Everybody in the whole cell block was dancin' to the...",
