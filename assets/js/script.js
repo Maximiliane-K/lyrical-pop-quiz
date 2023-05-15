@@ -84,18 +84,24 @@ function hideGame() {
  * https://codepen.io/ideaguy1974/pen/pZBBLK
  * http://vaidehijoshi.github.io/blog/2015/01/06/the-final-countdown-using-javascripts-setinterval-plu/s-clearinterval-methods/
  */
-function timerGo() {
+document.getElementById("start").addEventListener("click", function() {
+    console.log("timer started");
+
     let timeLeft = 30;
-    let timer = document.getElementById("timer");
+    let timerInterval= setInterval(startTimer, 1000);
 
     document.getElementById("start").style.display = "none";
     
-    setInterval(function(){
-    if (timeLeft === 0) {
+    function startTimer(){
+        document.getElementById("timer").innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+    
+        if (timeLeft === 0) {
     
         // clearTimeout(timerId);
         console.log("countdown");
-        
+       
+        clearInterval(timerInterval);
         let result = document.querySelector(".result");
 
         result.style.display = "block";
@@ -103,13 +109,10 @@ function timerGo() {
         form.style.display = "none";
         game.style.display = "none";
         console.log("Times up!");
-
-    } else {
-        timer.innerHTML = timeLeft + ' seconds remaining';
-        timeLeft-= 1;
     }
-    }, 1000); 
-}
+  }
+});
+
 
  /**
   * Function for showing main game section after clicking "Go!" button
@@ -126,6 +129,7 @@ function displayGame() {
  * Variable to be used as index to access questions array 
  */
 let currentQuestion = 0;
+/**
 
  /**
   * Function for displaying questions and answer options
@@ -170,9 +174,8 @@ function showQuestion() {
     nextBtn.addEventListener("click", () => {
         currentQuestion++;
         setNextQuestion();
-    });
-    
-/**
+    }); 
+/*
  * Function to increment score of correct answers 
  */
 function incrementRight(){
@@ -199,7 +202,9 @@ function setNextQuestion() {
     showQuestion();
 }
 
-
+function locationreload() {
+    location.reload();
+}
 
 
 

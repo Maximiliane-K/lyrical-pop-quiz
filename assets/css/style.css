@@ -212,7 +212,7 @@ body {
     color: #f50202;
 }
 
-#restart {
+#home {
     background: #EEBC08;
     color: #0DB0E6;
     padding: 1rem;
@@ -220,7 +220,7 @@ body {
     border-radius: 25%
 }
 
-#restart:hover {
+#home:hover {
     border: 8px solid #29C901;
     color: #29C901;
 }
