@@ -134,39 +134,19 @@ let currentQuestion = 0;
  /**
   * Function for displaying questions and answer options
   */
-function showQuestion() {
-    console.log("show question")
+  function showQuestion() {
 
     const question = questions[currentQuestion];
     questionElement.innerHTML = "Lyrics: " + question.text; 
+    console.log(`Lyrics:${question.text}`);
 
+    /* Loop to iterate through answer options and display each inside button-tag */
     optionElements.forEach(function(button, index) {
         button.textContent = question.options[index];
+        console.log(`Answer option:${question.options[index]}`);
+    });
+}
 
-        button.addEventListener("click", function(event) {
-            if (event.target.innerHTML === questions[currentQuestion].answer) {
-                console.log("correct");
-                incrementRight();
-                button.classList.add("correct-answer");
-
-            } else {
-                console.log("wrong");
-                incrementWrong();
-                button.classList.add("wrong-answer");
-            }
-
-            nextBtn.style.display="block";
-
-            for (i = 0; i < optionElements.length; i++) {
-            optionElements[i].classList.add("disabled");
-            }
-
-            });
-            button.classList.remove("correct-answer");
-            button.classList.remove("wrong-answer");
-            button.classList.remove("disabled");
-        });
-    }
 
 /**
  * Function to increment index of currentQuestion to show next question
