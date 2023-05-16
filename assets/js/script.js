@@ -174,9 +174,7 @@ function answerSelected(answer) {
     }
 }
 
-/**
- * Function to increment index of currentQuestion to show next question
- */
+//eventlistener to fire function to display the next question
     nextBtn.addEventListener("click", () => {
         currentQuestion++;
         setNextQuestion();
@@ -199,13 +197,19 @@ function incrementWrong(){
     console.log(`incorrect score ${currentScore}`);
 }
 
-/**#
- * Function to display next question
- */
+
+// function to set the next question
 function setNextQuestion() {
     console.log("next question");
     nextBtn.style.display="none";
     showQuestion();
+
+    // loop for removing the added classlist from answer buttons
+    for (i = 0; i < optionElements.length; i++) {
+        optionElements[i].classList.remove("disabled");
+        optionElements[i].classList.remove("right-answer");
+        optionElements[i].classList.remove("wrong-answer");
+    }
 }
 
 function locationreload() {
