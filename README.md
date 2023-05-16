@@ -14,11 +14,25 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
 
 
 ## **Strategy**
-Everybody loves singing along to their favorite song but how much of the lyrics do we actually know? In *Lyrical Pop Quiz* everybody can put their lyrical skills to a test. 
+Everybody loves singing along to their favorite song but how much of the lyrics do we actually know? In *Lyrical Pop Quiz* everybody can put their lyrical knowledge to the test. 
 
 ## **User Experience UX**
 
 ### **Target Audience**
 
-This game is designed for everybody who loves to sing in the shower, in the car and for those who just can't help singing 
-along when a good tune comes on!
+This game is designed for everybody who enjoys pop music and would like to test if they can gues the right lyric. 
+
+### **User Stories**
+
+- As a First Time User
+    -	I can see the name and logo of the quiz application.
+    - I can find instructions on how to play the game. 
+    -	I can see a timer that shows how much time is left to play the game. 
+    -	I can see the questions and three answer options.
+    -	I can see how many answers I got right or wrong. 
+
+- User Goals 
+    -	To be able to play the quiz app on a selected range of device sizes.
+    -	To be able to enter a username of my choice. 
+    -	To be able to see the remaining time. 
+    -	To be able to put my lyrical knowledge to test with help of multiple choice. 
