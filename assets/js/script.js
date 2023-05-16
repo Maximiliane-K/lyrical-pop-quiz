@@ -150,6 +150,29 @@ function showQuestion() {
     }
 }
 
+function answerSelected(answer) {
+    // variables to define the selected answer and the correct answer 
+    let answerSelection = answer.innerHTML;
+    let correctAnswer = questions[currentQuestion].answer;
+
+    // check the selected answer if this is equal to the correct answer
+    if (answerSelection === correctAnswer) {
+        answer.classList.add("right-answer");
+        incrementRight();
+        
+    } else {
+        answer.classList.add("wrong-answer");
+        incrementWrong();   
+    }
+
+    // show next button to get the next question 
+    nextBtn.style.display="block";
+
+    // loop for diabling answer options so only one can be choosen
+    for (i = 0; i < optionElements.length; i++) {
+        optionElements[i].classList.add("disabled") 
+    }
+}
 
 /**
  * Function to increment index of currentQuestion to show next question
