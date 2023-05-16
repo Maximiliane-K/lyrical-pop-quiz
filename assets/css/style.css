@@ -1,14 +1,14 @@
-/* google fonts import */
+/*google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind+Madurai&display=swap');
 
-/* remove default values */
+/*remove default values */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* body and heading styling */
+/*body and heading styling */
 body {
     font-family: "Bungee", cursive;
     font-weight: 500;
@@ -26,7 +26,7 @@ body {
     text-align: center;
 }
 
-/* landingpage section with menu */
+/*landingpage section with menu */
 .intro {
     display: flex;
     flex-direction: column;
@@ -43,7 +43,12 @@ body {
     border-radius: 10%;
 }
 
-/* Button for rules page */
+/*class to hide or show sections and elements */
+.hide {
+    display: none;
+}
+
+/*button for rules page */
 #info {
     font-family: "Bungee", cursive;
     font-weight: 500;
@@ -59,7 +64,7 @@ body {
     color: #29C901;
 }
 
-/* form section for username */
+/*form section for username */
 .user-input {
     display: flex;
     flex-direction: column;
@@ -78,7 +83,7 @@ body {
 
 }
 
-/* Enter button */
+/*enter button */
 #submit {
     padding: 18px;
     font-size: 1.5rem;
@@ -103,7 +108,7 @@ body {
     display: none;
 }
 
-/* Main game section */
+/*main game section */
 .game-play {
     text-align: center;
     padding: 1 rem;
@@ -115,7 +120,7 @@ body {
     color:#0DB0E6;
 }
 
-/* Go-button to start game and next-button */ 
+/*Go-button to start game and next-button */ 
 #start {
     background: #EEBC08;
     color: #0DB0E6;
@@ -143,14 +148,14 @@ body {
     color: #000000;
 }
 
-/* Timer */
+/*timer */
 #timer {
     margin: 15px;
     padding: 10px;
     background: EEBC08;
 }
 
-/* Lyrics and missing snippet*/
+/*lyrics and missing snippet*/
 #lyrics {
     font-size: 2rem;
     padding: 2rem;
@@ -187,7 +192,7 @@ body {
     pointer-events: none;
 }
 
-/* Result section with score */
+/*result section with score */
 .result {
     text-align: center;
     font-size: 2.5rem;
@@ -225,7 +230,7 @@ body {
     color: #29C901;
 }
 
-/* Rules info page*/
+/*rules info page*/
 .rules {
     display: flex;
     align-items: center;
@@ -267,4 +272,6 @@ body {
     border: 8px solid #29C901;
     color: #29C901;
 }
+
+
 
