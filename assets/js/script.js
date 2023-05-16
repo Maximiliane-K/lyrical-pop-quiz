@@ -58,9 +58,8 @@ function enterBtn() {
     }
 }
 
-/**
- * function for displaying the username on tha main game section after clicking the enter-button
- */
+// function for displaying the username on tha main game section after clicking the enter-button
+ 
 function displayUsername() {
     usernameP.innerHTML = "Lets Get Lyrical " + userName.value + "!";
     console.log("Username:", userName.value)
@@ -125,26 +124,30 @@ function displayGame() {
     showQuestion();
 }
 
-/**
- * Variable to be used as index to access questions array 
- */
-let currentQuestion = 0;
-/**
 
- /**
-  * Function for displaying questions and answer options
-  */
-  function showQuestion() {
+// variable to be used as index to access questions array 
+let currentQuestion = 0;
+
+ 
+//function for displaying questions and answer options
+  
+function showQuestion() {
 
     const question = questions[currentQuestion];
     questionElement.innerHTML = "Lyrics: " + question.text; 
     console.log(`Lyrics:${question.text}`);
 
-    /* Loop to iterate through answer options and display each inside button-tag */
+    // loop to iterate through answer options and display each inside button-tag 
     optionElements.forEach(function(button, index) {
         button.textContent = question.options[index];
         console.log(`Answer option:${question.options[index]}`);
     });
+
+    // loop to iterate through answer options and when clicked set as
+    let answerOptions = optionElements;
+    for (i = 0; i < answerOptions.length; i++) {
+        answerOptions[i].setAttribute("onclick", "answerSelected(this)");    
+    }
 }
 
 
