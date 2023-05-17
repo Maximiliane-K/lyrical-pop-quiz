@@ -198,6 +198,9 @@ body {
     font-size: 2.5rem;
 }
 
+#result-message {
+    padding: 1rem;
+}
 .scores {
     padding: 1rem;
 }

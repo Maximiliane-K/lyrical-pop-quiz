@@ -86,7 +86,7 @@ document.getElementById("start").addEventListener("click", function() {
         if (timeLeft === 0) {
         // clearTimeout(timerId);
         clearInterval(timerInterval);
-    
+        results();
         resultSection.classList.remove("hide");
         introSection.classList.add("hide");
         formSection.classList.add("hide");
@@ -171,9 +171,9 @@ function incrementRight(){
 //function to increment score of wrong answers
 function incrementWrong(){
 
-    let currentScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++currentScore;
-    console.log(`incorrect score ${currentScore}`);
+    let currentIncorrect = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++currentIncorrect;
+    console.log(`incorrect score ${currentIncorrect}`);
 }
 
 // function to set the next question
@@ -190,9 +190,21 @@ function setNextQuestion() {
     }
 }
 
+//function to show a user message on result page depending on the achieved score
+function results() {
+    console.log("result loaded")
+
+    if (document.getElementById("incorrect").innerText > document.getElementById("score").innerText) {
+        document.getElementById("result-message").textContent = "You need to catch up on your lyrics! Try again!";
+
+    } else if (document.getElementById("incorrect").innerText < document.getElementById("score").innerText) {
+        document.getElementById("result-message").textContent = "You Rock! Why not found a cover band!?"
+    } 
+}
+
 // function to reload document when clicking on home-button in result section
-function locationreload() {
-    window.location.reload();
+function locationReload() {
+    window.location.reload();  
 }
 
 
