@@ -57,6 +57,7 @@ function enterBtn() {
 
 //function for displaying the username on tha main game section after clicking the enter-button
  function displayUsername() {
+
     usernameP.innerHTML = "Lets Get Lyrical " + userName.value + "!";
     console.log("Username:", userName.value)
 }
@@ -74,19 +75,23 @@ function hideGame() {
 document.getElementById("start").addEventListener("click", function() {
     console.log("timer started");
 
+    //variables for timer 
     let timeLeft = 30;
     let timerInterval= setInterval(startTimer, 1000);
 
     document.getElementById("start").style.display = "none";
     
+    //function that countsdown remaining time
     function startTimer(){
         document.getElementById("timer").innerHTML = timeLeft + ' seconds remaining';
         timeLeft--;
     
         if (timeLeft === 0) {
-        // clearTimeout(timerId);
         clearInterval(timerInterval);
+        
+        //calling function to show results when time is up
         results();
+        
         resultSection.classList.remove("hide");
         introSection.classList.add("hide");
         formSection.classList.add("hide");
@@ -96,21 +101,24 @@ document.getElementById("start").addEventListener("click", function() {
   }
 });
 
-//function for showing main game section after clicking "Go!" button
+//function for showing main game section after clicking "Play!" button
 function displayGame() {
     console.log("Show game")
+
     questionElement.classList.remove("hide");
     allAnswers.style.display = "flex";
     
+    //calling function that shows the lyrics and answer options
     showQuestion();
 }
 
-// variable to be used as index to access questions array 
+//variable to be used as index to access questions array 
 let currentQuestion = 0;
 
 //function for displaying questions and answer options
 function showQuestion() {
 
+    //displays lyrics
     const question = questions[currentQuestion];
     questionElement.innerHTML = "Lyrics: " + question.text; 
     console.log(`Lyrics:${question.text}`);
@@ -121,7 +129,7 @@ function showQuestion() {
         console.log(`Answer option:${question.options[index]}`);
     });
 
-    //loop to iterate through answer options and when clicked set as
+    //loop to iterate through answer options and when clicked set as selected answer
     let answerOptions = optionElements;
     for (i = 0; i < answerOptions.length; i++) {
         answerOptions[i].setAttribute("onclick", "answerSelected(this)");    
@@ -132,11 +140,11 @@ function showQuestion() {
 function answerSelected(answer) {
 
     //variables to define the selected answer and the correct answer 
-    let answerSelection = answer.innerHTML;
+    let selectedAnswer = answer.innerHTML;
     let correctAnswer = questions[currentQuestion].answer;
 
-    //check the selected answer if this is equal to the correct answer
-    if (answerSelection === correctAnswer) {
+    //checks the selected answer if this is equal to the correct answer
+    if (selectedAnswer === correctAnswer) {
         answer.classList.add("right-answer");
         incrementRight();
         
@@ -148,14 +156,14 @@ function answerSelected(answer) {
     //show next button to get the next question 
     nextBtn.classList.remove("hide");
 
-    //loop for diabling answer options so only one can be choosen
+    //loop for diabling answer options so only one answer can be choosen
     for (i = 0; i < optionElements.length; i++) {
         optionElements[i].classList.add("disabled") 
     }
 }
 
 //eventlistener to fire function to display the next question
-    nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener("click", () => {
         currentQuestion++;
         setNextQuestion();
     }); 
@@ -178,6 +186,7 @@ function incrementWrong(){
 
 // function to set the next question
 function setNextQuestion() {
+
     console.log("next question");
     nextBtn.classList.add("hide");
     showQuestion();
@@ -197,13 +206,14 @@ function results() {
     if (document.getElementById("incorrect").innerText > document.getElementById("score").innerText) {
         document.getElementById("result-message").textContent = "You need to catch up on your lyrics! Try again!";
 
-    } else if (document.getElementById("incorrect").innerText < document.getElementById("score").innerText) {
+    } else if (document.getElementById("incorrect").innerText <= document.getElementById("score").innerText) {
         document.getElementById("result-message").textContent = "You Rock! Why not found a cover band!?"
     } 
 }
 
 // function to reload document when clicking on home-button in result section
 function locationReload() {
+
     window.location.reload();  
 }
 
