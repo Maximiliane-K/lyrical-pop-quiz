@@ -1,5 +1,5 @@
 /*google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Martel:wght@300&display=swap');
 
 /*remove default values */
 * {
@@ -10,10 +10,10 @@
 
 /*body and heading styling */
 body {
-    font-family: "Bungee", cursive;
+    font-family: "Bungee", sans-serif;
     font-weight: 500;
-    color: #0DB0E6;
-    background: #F8E68E;
+    color: #6600C2;
+    background: #fceaa9;
 }
 
 .heading {
@@ -37,13 +37,18 @@ body {
     font-family: "Bungee", cursive;
     font-weight: 500;
     font-size: 1.5rem;
-    color: #0DB0E6;
-    background-color: #EEBC08;
+    color: #6600C2;
+    background-color: #ffd94f;
     padding: 2rem 2rem;
     border-radius: 10%;
 }
 
-/*class to hide or show sections and elements */
+#start-game:hover {
+    border: 8px solid #F97068;
+    color: #F97068; 
+}
+
+/*class to hide or show sections and elements*/
 .hide {
     display: none;
 }
@@ -53,15 +58,15 @@ body {
     font-family: "Bungee", cursive;
     font-weight: 500;
     font-size: 1.5rem;
-    color: #0DB0E6;
-    background-color: #EEBC08;
+    color: #6600C2;
+    background-color: #ffd94f;
     padding: 2rem 1.5rem;
     border-radius: 10%;
 }
 
-.btn:hover {
-    border: 8px solid #29C901;
-    color: #29C901;
+#info:hover {
+    border: 8px solid #F97068;
+    color: #F97068; 
 }
 
 /*form section for username */
@@ -74,12 +79,14 @@ body {
 }
 
 #username {
+    font-family: "Bungee", cursive;
     font-size: 1rem;
     width: 30%;
     height: 25px;
     padding: 10px;
-    background: #F8E68E;
-    border: 5px solid #0DB0E6;
+    background: #ffd94f; 
+    color: #6600C2;
+    border: 5px solid #6600C2;
 
 }
 
@@ -88,17 +95,18 @@ body {
     padding: 18px;
     font-size: 1.5rem;
     font-weight: bold;
-    background: #0DB0E6;
-    color: #F8E68E;
+    background: #6600C2;
+    color: #ffd94f;
 }
 
 #submit:hover {
-    border: 5px solid #f50202;
+    border: 8px solid #7DFF4D;
+    color: #7DFF4D; 
 }
 
 #errors {
-    color: #EEBC08;
-    background-color: #f50202;
+    color: #FFED00;
+    background-color: #EC0000;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -111,41 +119,44 @@ body {
 /*main game section */
 .game-play {
     text-align: center;
-    padding: 1 rem;
+    padding: 1rem;
 }
 
 #username-output {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 5px;
-    color:#0DB0E6;
+    color: #6600C2;
 }
 
-/*Go-button to start game and next-button */ 
+/*play-button to start game and next-button */ 
 #start {
-    background: #EEBC08;
-    color: #0DB0E6;
-    padding: 2rem;
-    font-size: 2rem;
-    border-radius: 25%
+    font-family: "Bungee", cursive;
+    font-size: 5rem;
+    background: #ffd94f;
+    color: #6600C2;
+    padding: 3rem;
+    margin-top: 1em;
+    border-radius: 5px;
 }
 
 #start:hover {
-    background-color: #29C901;
-    color: #f50202;
+    border: 8px solid #7DFF4D;
+    color: #3DEF3F; 
 }
 
 #next {
-    background: #EEBC08;
-    color: #0DB0E6;
-    font-size: 1.5rem;
+    background: #ffd94f;
+    color: #6600C2;
+    font-family: "Bungee", cursive;
+    font-size: 2rem;
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 25%
 }
 
 #next:hover {
-    background-color: #0DB0E6;
-    color: #000000;
+    background-color: #6600C2;
+    color: #ffd94f;
 }
 
 /*timer */
@@ -158,7 +169,7 @@ body {
 /*lyrics and missing snippet*/
 #lyrics {
     font-size: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 #answer-buttons {
@@ -166,26 +177,31 @@ body {
     flex-direction: column;
 }
 .options {
-    color: #F8E68E;
-    background-color: #0DB0E6;
-    font-size: 2rem;
+    color: #ffd94f;
+    background-color: #6600C2;
+    font-family: "Bungee", cursive;
+    font-size: 1.5rem;
     padding: 5px;
     margin: 5px;
     width: 100%;
 }
 
 .options:hover {
-    border: 5px solid #000000;
-    color: #000000;
+    background-color: #ffd94f;
+    border: 8px solid #6600C2;
+    color: #6600C2; 
 }
 
 .right-answer {
-    background-color: #29C901;
-    color: #000000;
+    background-color: #ffd94f;
+    border: 8px solid #1f9b00;
+    color: #1f9b00; 
 }
 
 .wrong-answer {
-    background-color: #f50202;
+    background-color: #ffd94f;
+    border: 8px solid #f50000;
+    color: #f50000; 
 }
 
 .disabled {
@@ -214,23 +230,24 @@ body {
 }
 
 #wrong {
-    color: #f50202;
+    color: #f50000;
 }
 #score-wrong {
-    color: #f50202;
+    color: #f50000;
 }
 
 #home {
-    background: #EEBC08;
-    color: #0DB0E6;
+    background: #ffd94f;
+    color: #6600C2;
     padding: 1rem;
+    font-family: "Bungee", cursive;
     font-size: 1.5rem;
     border-radius: 25%
 }
 
 #home:hover {
-    border: 8px solid #29C901;
-    color: #29C901;
+    background-color: #6600C2;
+    color: #ffd94f;
 }
 
 /*rules info page*/
@@ -238,7 +255,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: "Hind Madurai", sans-serif;
     padding: 1rem;
 }
 
@@ -250,6 +266,7 @@ body {
 }
 
 .rules p {
+    font-family: "Martel", serif;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem;
@@ -257,14 +274,15 @@ body {
 }
 
 .rules ul {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #000000;
+    font-family: "Martel", serif;
+    font-size: 1rem; 
+    font-weight: bolder;
+    color: #6600C2;
 }
 
 #play-now {
-    background: #EEBC08;
-    color: #0DB0E6;
+    background-color: #6600C2;
+    color: #fceaa9;
     padding: 1rem;
     margin: 2rem;
     font-size: 1.5rem;
@@ -272,8 +290,8 @@ body {
 }
 
 #play-now:hover {
-    border: 8px solid #29C901;
-    color: #29C901;
+    border: 8px solid #7DFF4D;
+    color: #7DFF4D; 
 }
 
 
