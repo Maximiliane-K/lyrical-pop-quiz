@@ -22,19 +22,17 @@
     <!-- landingpage section with menu -->
     <main>
         <section class="intro">
-            <h1>Welcome to Lyrical Pop Quiz!</h1>
-            <button class="btn" id="start-game" onclick="showHideIntro()">Start Game</button>
+            <h2>Welcome to Lyrical Pop Quiz!</h2>
+            <button id="start-game" onclick="showHideIntro()">Start Game</button>
             <br>
-            <a href="rules.html" target="_blank">
-                <button class="btn" id="info">How to Play?</button>
-            </a>
+            <a id="info" href="rules.html" target="_blank">How to play</a>
         </section>
 
         <!-- form section for username -->
         <section class="user">
             <h2>Almost ready to go...</h2>
                 <div class="user-input">
-                    <label for="userame">Please enter a Username:</label> 
+                    <label for="username">Please enter a Username:</label> 
                     <br>
                     <input id="username" type="text" name="username"> 
                     <br>
@@ -46,7 +44,7 @@
         </section>
 
         <!-- game section with the game -->
-        <main>
+  
             <section class="game-play">
                 <h2>Let's get lyrical</h2>
                 <div>
@@ -72,7 +70,7 @@
                     <button id="next">Next</button>
                 </div>
             </section>
-        </main>
+    </main>
         <!-- result section that shows final score -->
         <section class="result">
             <h2>Times Up!</h2>
@@ -85,7 +83,6 @@
             <br>
             <button id="home" onclick="locationReload()">Home</button>
         </section>
-    </main>
 
     <!-- Javascript -->
     <script src="assets/js/script.js"></script>

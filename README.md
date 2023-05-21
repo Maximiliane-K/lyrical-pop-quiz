@@ -1,5 +1,8 @@
 # **Lyrical Pop Quiz**
 
+## **Code Institute Portfolio Project I**
+![Am I responsive screenshot](documentation/screenshots/screenshot-am-i-responsive.png)
+
 ## **Code Institute Portfolio Project II**
 
 ## **Background**
