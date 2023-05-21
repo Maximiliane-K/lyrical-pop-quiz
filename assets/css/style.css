@@ -232,6 +232,7 @@ h1 {
 #result-message {
     padding: 1rem;
 }
+
 .scores {
     padding: 1rem;
 }
@@ -394,5 +395,22 @@ h1 {
 
     .options {
         font-size: 0.8rem;
+    }
+
+    .result h2 {
+        font-size: 0.8rem;
+    }
+
+    #result-message {
+        font-size: 0.8rem;
+    }
+    
+    .result {
+        font-size: 1.2rem;
+    }
+    
+    #home {
+        padding: 0.5rem;
+        font-size: 1rem;
     }
 }
