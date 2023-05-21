@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+//comment to let JSHint validator know that I'm using ECMAScript 6 specific syntax
+
 //variable declaration
 const introSection = document.querySelector(".intro");
 const formSection = document.querySelector(".user");
@@ -6,7 +9,7 @@ const resultSection = document.querySelector(".result");
 
 //username variables 
 const usernameP = document.getElementById("username-output");
-const userName = document.getElementById("username")
+const userName = document.getElementById("username");
 
 //main game variables
 const questionElement = document.getElementById("lyrics"); 
@@ -59,12 +62,12 @@ function enterBtn() {
  function displayUsername() {
 
     usernameP.innerHTML = userName.value + "!";
-    console.log("Username:", userName.value)
+    console.log("Username:", userName.value);
 }
 
 //function to hide the lyrics and answer options befor clickling "Go!"
 function hideGame() {
-    console.log("Game hidden")
+    console.log("Game hidden");
 
     questionElement.classList.add("hide");
     nextBtn.classList.add("hide");
@@ -103,7 +106,7 @@ document.getElementById("start").addEventListener("click", function() {
 
 //function for showing main game section after clicking "Play!" button
 function displayGame() {
-    console.log("Show game")
+    console.log("Show game");
 
     questionElement.classList.remove("hide");
     allAnswers.style.display = "flex";
@@ -158,7 +161,7 @@ function answerSelected(answer) {
 
     //loop for diabling answer options so only one answer can be choosen
     for (i = 0; i < optionElements.length; i++) {
-        optionElements[i].classList.add("disabled") 
+        optionElements[i].classList.add("disabled");
     }
 }
 
@@ -201,14 +204,14 @@ function setNextQuestion() {
 
 //function to show a user message on result page depending on the achieved score
 function results() {
-    console.log("result loaded")
+    console.log("result loaded");
 
     if (document.getElementById("incorrect").innerText > document.getElementById("score").innerText) {
         document.getElementById("result-message").textContent = "You need to catch up on your lyrics! Try again!";
 
     } else if (document.getElementById("incorrect").innerText <= document.getElementById("score").innerText) {
-        document.getElementById("result-message").textContent = "You Rock! Why not found a cover band!?"
-    } 
+        document.getElementById("result-message").textContent = "You Rock! Why not found a cover band!?";
+    }
 }
 
 // function to reload document when clicking on home-button in result section

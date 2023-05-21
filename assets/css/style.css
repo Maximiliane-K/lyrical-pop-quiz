@@ -21,15 +21,15 @@ body {
 }
 
 .logo {
-    height: 25rem;
+    height: 20rem;
     padding: 5px;
     text-align: center;
 }
 
 /*landingpage section with menu */
-h1 { 
+h2 { 
     font-size: 3rem;
-    padding: 5px;
+    padding-bottom: 1rem;
     margin: 5px;
 }
 
@@ -180,7 +180,6 @@ h1 {
 #timer {
     margin: 15px;
     padding: 10px;
-    background: EEBC08;
 }
 
 /*lyrics and missing snippet*/
@@ -295,7 +294,8 @@ h1 {
     padding: 1rem;
     margin: 2rem;
     font-size: 1.5rem;
-    border-radius: 25%
+    border-radius: 25%;
+    text-decoration: none;
 }
 
 #play-now:hover {
@@ -321,7 +321,7 @@ h1 {
         padding: 3px;
     }
 
-    h1 { 
+    h2 { 
         font-size: 1.5rem;
         padding: 10px;
         margin: 0;
@@ -372,7 +372,7 @@ h1 {
 
 /*for small screen sizes 470px and down*/
 @media screen and (max-width:470px) {
-    h1 { 
+    h2 { 
         font-size: 1rem;
     }
 

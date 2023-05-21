@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+//comment to let JSHint validator know that I'm using ECMAScript 6 specific syntax
 
 const questions = [
     {
@@ -80,8 +82,4 @@ const questions = [
         options: ["jeans", "dreams", "genes"],
         answer: "dreams"
     },
-]
-
-//end of JavaScript code
-
-
+];
