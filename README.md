@@ -14,6 +14,9 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
     * [Target audience](#target-audience)
     * [User Stories](#user-stories)
 * [Wireframes](#wireframes)
+* [Design Choices](#design-choices)
+    * [Color Palette](#color-palette)
+    * [Typography](#typography)
 
 
 ## **Strategy**
@@ -66,6 +69,17 @@ Result section:
 How to play page:
 
 ![How to play wireframe](documentation/wireframes/wireframe-rules.png)
+
+## **Design Choices**
+### **Color Palette**
+
+The idea behind the color palette was reflecting the mood of a 90's pop art comic with its vibrant and contrasting colors. 
+![Color palette](documentation/design/Lyrical-Pop-Quiz-colors.png)
+
+### **Typography**
+
+The Fonts used is [Bungee](https://fonts.google.com/specimen/Bungee) and [Martel](https://fonts.google.com/specimen/Martel). Bungee is a typeface that celebrates the urban sign. Martel is a libre font development project. Bungee being bold and round reminded me of somehting playfull and comic-like. This is why I choose the font. I used Martel on the rules page to make it more readable and underline the less playful information. 
+
 
 
 
