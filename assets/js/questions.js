@@ -82,4 +82,6 @@ const questions = [
     },
 ]
 
+//end of JavaScript code
+
 

@@ -28,6 +28,8 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
     * [Future Features](#future-features)
 * [Bugs and Challenges](#bugs-and-challenges)
 * [Technologies Used](#technologies-used)
+* [Deployment](#deployment)
+* [Development](#development)
 
 
 
@@ -178,6 +180,31 @@ The languages used to create this website were HTML, CSS and JavaScript.
 * [Canva](#https://www.canva.com/create/logos/) was used to create the Logo. 
 * [Coolors](#https://coolors.co/) was used to create the color palette.
 * [Am I Responsive](#https://ui.dev/amiresponsive) was used to display the website on a range of devices.
+
+## **Deployment**
+This site was developed in the [Codeanywhere](https://app.codeanywhere.com/) IDE and deployed to GitHub Pages. During development the site was previewed in the browser through *Port 8000* in Codeanywhere by running the command `python3 -m http.server` in the terminal.
+
+### Deploying to Github Pages:
+1. Once logged or signed into Github, find the repository to the project.
+2. Search for the *Settings* link and then click it.
+3. A navigation bar will open on the left. Search for the *Pages* link and click it. 
+4. In the *Source* section, choose *Deploy from a branch*.
+5. Under this section you will find *Branch*. Choose *Main* and *Root*.
+6. Click *Save* and your Github Pages site will be build. 
+7. Refresh the page to see the URL the site is deployed to. 
+
+You can find the deployed site [here](https://maximiliane-k.github.io/lyrical-pop-quiz/).
+
+## **Development**
+For local development the project repository can be found on GitHub.
+-	Log in or sign up to Github.
+-	Navigate to my GitHub profil, [Maximiliane-K](https://github.com/Maximiliane-K.).
+-	Locate the repository named *“Lyrical Pop Quiz”*.
+-	Click on the green *code* button and choose HTTPS, SSH or GitHubCLI and copy the preferred link. 
+-	Open the IDE of your choice and create a directory where the repository should be stored using the terminal. 
+-	Enter `git clone`, paste the copied URL and press enter.
+-	The repository will be cloned to the selected repository. 
+
  
 
 

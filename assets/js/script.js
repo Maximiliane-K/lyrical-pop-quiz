@@ -62,7 +62,7 @@ function enterBtn() {
     console.log("Username:", userName.value)
 }
 
- //function to hide the lyrics and answer options befor clickling "Go!"
+//function to hide the lyrics and answer options befor clickling "Go!"
 function hideGame() {
     console.log("Game hidden")
 
@@ -216,6 +216,8 @@ function locationReload() {
 
     window.location.reload();  
 }
+
+//end of JavaScript code
 
 
 
