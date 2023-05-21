@@ -88,7 +88,7 @@ How to play page:
 ### **Color Palette**
 
 The idea behind the color palette was reflecting the mood of a 90's pop art comic with its vibrant and contrasting colors. 
-![Color palette](documentation/design/Lyrical-Pop-Quiz-colors.png)
+![Color palette](documentation/design/color-palette.png)
 
 ### **Typography**
 
