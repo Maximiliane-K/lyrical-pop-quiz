@@ -75,6 +75,11 @@ h1 {
 }
 
 /*form section for username */
+.user h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .user-input {
     display: flex;
     flex-direction: column;
@@ -122,13 +127,18 @@ h1 {
 }
 
 /*main game section */
+.game-play h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
 .game-play {
     text-align: center;
     padding: 1rem;
 }
 
 #username-output {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 5px;
     color: #6600C2;
 }
@@ -214,6 +224,11 @@ h1 {
 }
 
 /*result section with score */
+.result h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .result {
     text-align: center;
     font-size: 2.5rem;

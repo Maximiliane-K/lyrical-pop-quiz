@@ -58,7 +58,7 @@ function enterBtn() {
 //function for displaying the username on tha main game section after clicking the enter-button
  function displayUsername() {
 
-    usernameP.innerHTML = "Lets Get Lyrical " + userName.value + "!";
+    usernameP.innerHTML = userName.value + "!";
     console.log("Username:", userName.value)
 }
 
