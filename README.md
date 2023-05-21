@@ -33,6 +33,10 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
 * [Technologies Used](#technologies-used)
 * [Deployment](#deployment)
 * [Development](#development)
+* [Testing](#testing)
+    * [Lighthouse](#lighthouse)
+    * [Validation](#validation)
+
 
 
 
@@ -207,6 +211,17 @@ For local development the project repository can be found on GitHub.
 -	Open the IDE of your choice and create a directory where the repository should be stored using the terminal. 
 -	Enter `git clone`, paste the copied URL and press enter.
 -	The repository will be cloned to the selected repository. 
+
+## **Testing**
+
+### **Lighthouse**
+To test the performance, accessibility, best practices and SEO of the website, the Google developer tool Lighthouse was used. 
+
+* ![index.html](documentation/testing/lighthouse-index-html.png)
+* ![how-to-play.html](documentation/testing/lighthouse-how-to-play-html.png)
+
+### **Validation**
+
 
  
 
