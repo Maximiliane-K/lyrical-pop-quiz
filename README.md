@@ -158,6 +158,8 @@ The *How to play* page can only be accessed through the *Home* page which is the
 - Implement a shuffle function that shuffles randomly through the given lyrics. 
 - Implement different levels with less time.
 
+## **Bugs and Challenges**
+One of my biggest challenges and bugs was displaying the three answer options. My approach at the beginning 
 
 
 
