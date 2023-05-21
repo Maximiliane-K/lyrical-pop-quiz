@@ -9,12 +9,18 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
 ## **Contents**
 * [Background](#background)
 * [Strategy](#strategy)
+* [Scope](#scope)
 * [User Experience UX](#user-experience-ux)
     * [Target audience](#target-audience)
+    * [User Stories](#user-stories)
+* [Wireframes](#wireframes)
 
 
 ## **Strategy**
 Everybody loves singing along to their favorite song but how much of the lyrics do we actually know? In *Lyrical Pop Quiz* everybody can put their lyrical knowledge to the test. 
+
+## **Scope**
+The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. The site’s users can play an online quiz to test their specific knowledge of pop song lyrics. The features include creating a username, tracking the score and and a countdown timer. 
 
 ## **User Experience UX**
 
@@ -36,3 +42,30 @@ This game is designed for everybody who enjoys pop music and would like to test 
     -	To be able to enter a username of my choice. 
     -	To be able to see the remaining time. 
     -	To be able to put my lyrical knowledge to test with help of multiple choice. 
+
+## **Wireframes**
+
+The wireframes where created using Figma.
+
+Homepage:
+
+![Homepage wireframe](documentation/wireframes/wireframe-home.png)
+
+Section for entering username:
+
+![Username-form wireframe](documentation/wireframes/wireframe-username-form.png)
+
+Game play section:
+
+![Game Play Section](documentation/wireframes/wireframe-main-game-section.png)
+
+Result section:
+
+![Homepage wireframe](documentation/wireframes/wireframe-result-page.png)
+
+How to play page:
+
+![How to play wireframe](documentation/wireframes/wireframe-rules.png)
+
+
+
