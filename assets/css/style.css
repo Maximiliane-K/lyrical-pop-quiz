@@ -52,7 +52,7 @@ h1 {
 #start-game:hover {
     border: 8px solid #F97068;
     color: #F97068; 
-}
+} 
 
 /*class to hide or show sections and elements*/
 .hide {
@@ -202,12 +202,6 @@ h1 {
     width: 100%;
 }
 
-.options:hover {
-    background-color: #ffd94f;
-    border: 8px solid #6600C2;
-    color: #6600C2; 
-}
-
 .right-answer {
     background-color: #ffd94f;
     border: 8px solid #1f9b00;
@@ -315,3 +309,11 @@ h1 {
     color: #7DFF4D; 
 }
 
+/*media query to ignore hover when on touch devices*/
+@media (hover: hover) {
+    .options:hover{
+        background-color: #ffd94f;
+        border: 8px solid #6600C2;
+        color: #6600C2; 
+    }
+}
