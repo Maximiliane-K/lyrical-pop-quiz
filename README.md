@@ -26,6 +26,8 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
     * [Game](#game)
     * [Results](#results)
     * [Future Features](#future-features)
+* [Bugs and Challenges](#bugs-and-challenges)
+* [Technologies Used](#technologies-used)
 
 
 
@@ -159,7 +161,24 @@ The *How to play* page can only be accessed through the *Home* page which is the
 - Implement different levels with less time.
 
 ## **Bugs and Challenges**
-One of my biggest challenges and bugs was displaying the three answer options. My approach at the beginning 
+My biggest challenge and bug was displaying the lyrics which represent the questions of the quiz. I first approached this by looping through the array of options (questions.js). The problem here was that it looped through the lyrics-questions array, which was shown in the console, but it only displayed the last option of lyric-question in the main game section. 
+I changed my approach and worked with currentQuesition = 0 and using this as my index for each lyrics-option. The first lyric-question starts with the index [currentQuestion], which is 0 and by clicking on the next button it increments the index by one. This made it possible to display all the lyrics-questions after each other. 
+![Bug](documentation/screenshots/screenshot-bug.png)
+
+## **Technologies Used**
+
+### **Languages**
+The languages used to create this website were HTML, CSS and JavaScript.
+
+### **Frameworks & Tools**
+* Figma was used for creating the wireframes. 
+* GitHub and Git were used as host plattform and version control.
+* Codeanywhere as IDE for writing and editing code.
+* Google Dev Tools were used to test features and support with the responsiveness and styling of the website.
+* [Canva](#https://www.canva.com/create/logos/) was used to create the Logo. 
+* [Coolors](#https://coolors.co/) was used to create the color palette.
+* [Am I Responsive](#https://ui.dev/amiresponsive) was used to display the website on a range of devices.
+ 
 
 
 
