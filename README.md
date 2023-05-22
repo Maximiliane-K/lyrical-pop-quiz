@@ -38,8 +38,9 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
     * [Validation](#validation)
 * [Credits](#credits)
     * [Code](#code)
-
-
+    * [Content](#content)
+    * [Images](#images)
+    * [Acknowledgments](#acknowledgments)
 
 ## **Strategy**
 Everybody loves singing along to their favorite song but how much of the lyrics do we actually know? In *Lyrical Pop Quiz* everybody can put their lyrical knowledge to the test. 
@@ -247,9 +248,23 @@ The *script.js* and *questions.js* were both tested in [JSHint](https://jshint.c
 [Quiz App JavaScript with Timer](https://www.youtube.com/watch?v=xZXW5SnCiWI).
 * To ignore the hover effects on devices with touchscreen the following tutorial was used as help: [Hover queries](https://www.smashingmagazine.com/2022/03/guide-hover-pointer-media-queries/).
 
- 
+### **Content**
 
+The lyrics to the songs were found on [Google](https://www.google.com/search?q=google&rlz=1C5CHFA_enDE1023DE1023&oq=google&aqs=chrome..69i57j46i131i199i433i465i512j35i19i39i512i650j69i60l3j69i65l2.3915j0j7&sourceid=chrome&ie=UTF-8).
 
+### **Images**
+
+ * The image for the logo: <a href="https://www.freepik.com/free-vector/cassette-illustration-background_989139.htm#&position=1&from_view=undefined">Image by ajipebriana</a> on Freepik.
+
+  * The Logo was created by Maximiliane Kaempffer using a template on [Canva](https://www.canva.com/create/logos/).
+
+  * The favicon was created by converting the logo with [Favicon](https://favicon.io/).
+
+  ### **Acknowledgments**
+
+ * I would like to say thank you to my Code Institue Mentor [Brian O'Hare](https://ie.linkedin.com/in/bjohare) for guiding me through my second project. 
+
+ * I would like to thank CodeInstitutes tutor Sean for helping me out with my bugs. 
 
 
 
