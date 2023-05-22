@@ -227,6 +227,18 @@ To test the performance, accessibility, best practices and SEO of the website, t
 
 ![W3C html](documentation/testing/w3c-index-html.png)
 
+* [how-to-play.html](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmaximiliane-k.github.io%2Flyrical-pop-quiz%2Fhow-to-play.html) - no errors found
+
+![W3C html](documentation/testing/w3c-how-to-play-html.png)
+
+* [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmaximiliane-k.github.io%2Flyrical-pop-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - no errors found
+
+![W3C css](documentation/testing/w3c-style-css.png)
+
+**JSHint**
+
+The *script.js* and *questions.js* were both tested in [JSHint](https://jshint.com/) and no errors were found. 
+
 
  
 
