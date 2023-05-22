@@ -188,9 +188,9 @@ The languages used to create this application were HTML, CSS and JavaScript.
 * [GitHub](https://github.com/join/welcome) and Git were used as host plattform and version control.
 * [Codeanywhere](https://app.codeanywhere.com/) as IDE for writing and editing code.
 * Google Dev Tools were used to test features and support with the responsiveness and styling of the website.
-* [Canva](#https://www.canva.com/create/logos/) was used to create the Logo. 
-* [Coolors](#https://coolors.co/) was used to create the color palette.
-* [Am I Responsive](#https://ui.dev/amiresponsive) was used to display the website on a range of devices.
+* [Canva](https://www.canva.com/create/logos/) was used to create the Logo. 
+* [Coolors](https://coolors.co/) was used to create the color palette.
+* [Am I Responsive](https://ui.dev/amiresponsive) was used to display the website on a range of devices.
 
 ## **Deployment**
 This site was developed in the [Codeanywhere](https://app.codeanywhere.com/) IDE and deployed to GitHub Pages. During development the site was previewed in the browser through *Port 8000* in Codeanywhere by running the command `python3 -m http.server` in the terminal.
