@@ -1,12 +1,12 @@
 # **Lyrical Pop Quiz**
 
-## **Code Institute Portfolio Project I**
+## **Code Institute Portfolio Project II**
 ![Am I responsive screenshot](documentation/screenshots/screenshot-am-i-responsive.png)
 
 ## **Code Institute Portfolio Project II**
 
 ## **Background**
-I love music and specially singing along to it. No matter if under the shower, in the car or whenever a good lyric just gets me. People around me would probably say I’m quite good with lyrics but when put to a test I can confidently say, this is not the case. Often, we use the words we think are the lyrics but if checked mostly it just sound similar. 
+I love music and specially singing along to it. No matter if under the shower, in the car or whenever a good lyric just gets me. People around me would probably say I’m quite good with lyrics but when put to a test I can confidently say, this is not the case. Often, we use the words we think are the lyrics but if checked mostly it just sounds similar. 
 If you want to know how good your lyrical knowledge of popular songs is then this is the perfect game for you! 
 
 [Lyrical Pop Quiz on GitHub Pages](https://maximiliane-k.github.io/lyrical-pop-quiz/)
@@ -73,7 +73,7 @@ This game is designed for everybody who enjoys pop music and would like to test 
 
 ## **Wireframes**
 
-The wireframes where created using Figma.
+The wireframes where created using [Figma](https://www.figma.com/login).
 
 Homepage:
 
@@ -103,7 +103,7 @@ The idea behind the color palette was reflecting the mood of a 90's pop art comi
 
 ### **Typography**
 
-The Fonts used is [Bungee](https://fonts.google.com/specimen/Bungee) and [Martel](https://fonts.google.com/specimen/Martel). Bungee is a typeface that celebrates the urban sign. Martel is a libre font development project. Bungee being bold and round reminded me of somehting playfull and comic-like. This is why I choose the font. I used Martel on the rules page to make it more readable and underline the less playful information. 
+The Fonts used are [Bungee](https://fonts.google.com/specimen/Bungee) and [Martel](https://fonts.google.com/specimen/Martel). Bungee is a typeface that celebrates the urban sign. Martel is a libre font development project. Bungee being bold and round reminded me of somehting playfull and comic-like. This is why I choose the font. I used Martel on the rules page to make it more readable and underline the less playful information. 
 
 ## **Features**
 
@@ -116,13 +116,13 @@ The *How to play* page can only be accessed through the *Home* page which is the
 
 - The logo features a casette with headphones and the games name *Lyrical Pop Quiz*.
 - It appears in bright colors to reflect the color-sheme of the application. 
-- The logo was created using Canva.com.
+- The logo was created using [Canva](https://www.canva.com/).
 
 ### **Homepage**
 
 ![Home](documentation/screenshots/screenshot-home-page.png)
 
-- In the center top of the page you see the logo with the games name *lyrical Pop Quiz*.
+- In the center top of the page you see the logo with the games name *Lyrical Pop Quiz*.
 - The two main buttons *Start Game* and *How To Play* are for navigating through the application. 
 - Clicking on *Start Game* will hide the landingpage section and show the username-form section. 
 - Clicking on the *How To Play* button will open a new window with the rules to the game. 
@@ -157,7 +157,7 @@ The *How to play* page can only be accessed through the *Home* page which is the
 - The lyrics is shown and has to be completed with one of the three answer options 
 - If the correct answer is choosen the answer is highlighted green if the wrong answer was selected its highlighted red.
 - The correct and incorrect answers are being counted in the background and will be displayed after the time has run up. 
-- After selecting an answer the *Next* button appears to be able to got to the next question. 
+- After selecting an answer the *Next* button appears to be able to go to the next question. 
 
 ### **Results**
 
@@ -181,12 +181,12 @@ I changed my approach and worked with currentQuesition = 0 and using this as my 
 ## **Technologies Used**
 
 ### **Languages**
-The languages used to create this website were HTML, CSS and JavaScript.
+The languages used to create this application were HTML, CSS and JavaScript.
 
 ### **Frameworks & Tools**
-* Figma was used for creating the wireframes. 
-* GitHub and Git were used as host plattform and version control.
-* Codeanywhere as IDE for writing and editing code.
+* [Figma](https://www.figma.com/login) was used for creating the wireframes. 
+* [GitHub](https://github.com/join/welcome) and Git were used as host plattform and version control.
+* [Codeanywhere](https://app.codeanywhere.com/) as IDE for writing and editing code.
 * Google Dev Tools were used to test features and support with the responsiveness and styling of the website.
 * [Canva](#https://www.canva.com/create/logos/) was used to create the Logo. 
 * [Coolors](#https://coolors.co/) was used to create the color palette.
