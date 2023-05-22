@@ -36,7 +36,8 @@ If you want to know how good your lyrical knowledge of popular songs is then thi
 * [Testing](#testing)
     * [Lighthouse](#lighthouse)
     * [Validation](#validation)
-
+* [Credits](#credits)
+    * [Code](#code)
 
 
 
@@ -239,6 +240,12 @@ To test the performance, accessibility, best practices and SEO of the website, t
 
 The *script.js* and *questions.js* were both tested in [JSHint](https://jshint.com/) and no errors were found. 
 
+## **Credits**
+
+### **Code**
+* The following tutorial was used as a guide for the application:
+[Quiz App JavaScript with Timer](https://www.youtube.com/watch?v=xZXW5SnCiWI).
+* To ignore the hover effects on devices with touchscreen the following tutorial was used as help: [Hover queries](https://www.smashingmagazine.com/2022/03/guide-hover-pointer-media-queries/).
 
  
 
