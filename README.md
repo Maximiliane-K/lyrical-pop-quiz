@@ -221,6 +221,11 @@ To test the performance, accessibility, best practices and SEO of the website, t
 * ![how-to-play.html](documentation/testing/lighthouse-how-to-play-html.png)
 
 ### **Validation**
+**W3C Validator**
+
+* [index.html](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmaximiliane-k.github.io%2Flyrical-pop-quiz%2F) - no errors found
+
+![W3C html](documentation/testing/w3c-index-html.png)
 
 
  
